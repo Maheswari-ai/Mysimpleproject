@@ -1,0 +1,18 @@
+# Custom function modeling example
+def custom_memory_allocator()
+{
+    /* Marks this function as allocating memory */
+    allocates_memory();
+}
+
+def custom_memory_deallocator(void *ptr)
+{
+    /* Marks this function as freeing memory */
+    frees_memory(ptr);
+}
+
+def suppress_example_function()
+{
+    /* Suppress false positives for a specific function */
+    suppress("UNINIT")
+}
